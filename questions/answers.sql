@@ -3,12 +3,12 @@
 /* 
 This query aims to find the most ordered product and it achieves this by
 identifying items that were added to the cart and checks if they were later removed,
-focusing on successful checkouts. 
-It then counts the number of times each product appears in a successful
+focusing on successful checkouts. It then counts the number of times each product appears in a successful
 checkout.
 */
 
 with cart_events as (
+    --
     -- Select events related to adding items to the cart, excluding visits and checkouts
     select *
     from alt_school.events e 
