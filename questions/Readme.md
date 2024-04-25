@@ -25,21 +25,20 @@ consider the following questions below:
   - location - the customer's location
   - total_spend - the total amount of money spent on orders
 
-
 ## part 2b
 
 a cart is considered abandoned if a user fails to checkout i.e the user adds/removes items from their cart but never proceeds to pay for their order. consider the following questions:
 
 - using the events table, Determine **the most common location** (country) where successful checkouts occurred. return `location` and `checkout_count` where:
-    - location: the name of the location
-    - checkout_count: the number of checkouts that occured in the location
+  - location: the name of the location
+  - checkout_count: the number of checkouts that occured in the location
 
 - using the events table, identify the customers who abandoned their carts and count the number of events (excluding visits) that occurred before the abandonment. return the `customer_id` and `num_events` where:
 
-    - customer_id: id uniquely identifying the customers
-    - num_events: the number of events excluding visits that occured before abandonment
+  - customer_id: id uniquely identifying the customers
+  - num_events: the number of events excluding visits that occured before abandonment
 
 - Find the average number of visits per customer, considering only customers who completed a checkout! return average_visits to 2 decimal place
 
-    - average_visits: this number is a metric that suggests the avearge number of times a customer visits the website before they make a successful transaction!
+  - average_visits: this number is a metric that suggests the avearge number of times a customer visits the website before they make a successful transaction!
 
